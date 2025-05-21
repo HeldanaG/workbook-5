@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public abstract class SuperPerson {
+public abstract class SuperPerson implements Fightable  {
 
     //protected properties so they can possibly be access by our children, grand children, etc...
     //these properties stay in the family

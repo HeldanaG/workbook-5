@@ -2,14 +2,11 @@ package com.pluralsight;
 
 import java.util.Random;
 
-public class SuperVillan extends SuperPerson{
+public class SuperVillan extends SuperPerson implements Fightable {
 
     public SuperVillan(String name, int health, int villianLevel){
         super(name, health);
-
         this.experiencePoints = villianLevel;
-
-        //let the world know the hero now exists
         System.out.println(this.name + " has arrived with a power level of " + villianLevel);
     }
 
